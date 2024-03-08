@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Secdea Beach Resort</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Secdea Beach Resort</a>  
+        <a href="Reservation.htm" class="action-btn">Reservation</a>
+    </header>
+    <h1 class="Reservation">Reservation Form</h1>
+    <form action="/submit_reservation" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="date">Date of Reservation:</label><br>
+        <input type="date" id="date" name="date" required><br>
+        <label for="time">Time of Reservation:</label><br>
+        <input type="time" id="time" name="time" required><br>
+        <label for="guests">Number of Guests:</label><br>
+        <input type="number" id="guests" name="guests" min="1" max="10" required><br>
+        <label for="email">Room</label><br>
+        <input type="room" id="room" name="room" required><br>
+        <input type="submit" value="Submit Reservation">
+
+    </form>
+</body>
+</html>
